@@ -13,7 +13,7 @@
 ## Taskliste
 
 ### Branch `maven_detail`
-- [x] Erweitern des `pom.xml` um alle notwendigen Bibliotheken und Konfigurationen.
+- [ ] Erweitern des `pom.xml` um alle notwendigen Bibliotheken und Konfigurationen.
 - [ ] Jedes Gruppenmitglied fügt eigene Entwicklerinformationen zum `pom.xml` hinzu.
 - [ ] Ein Teammitglied fügt die Adresse des Git Repositories hinzu.
 
