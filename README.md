@@ -1,7 +1,5 @@
 # GitGroupUse
 
-*Hier den Namen des Projekts eintragen.*
-
 ## Teammitglieder
 
 - Maximilian Schuster
@@ -30,7 +28,7 @@
 - [ ] Erstellung von JavaDoc Kommentaren für vorhandene und neue Klassen.
 
 ### Branch `tests`
-- [ ] Entwicklung von Tests für bestehende und neue Klassen zur Erreichung einer 100% Testabdeckung.
+- [x] Entwicklung von Tests für bestehende und neue Klassen zur Erreichung einer 100% Testabdeckung.
 
 ### Branch `maven_site`
 - [ ] Erstellung einer maven site Dokumentation mit Integration von Projektinformationen, Teststatistiken und API-Dokumentation.
