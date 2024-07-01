@@ -1,71 +1,63 @@
-
+package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
-
 public class StringQueue implements IQueue {
 
   private List<String> elements = new ArrayList<String>();
-  private int maxSize = 5;
+  private int maxSize;
 
-  public StringQueue(int maxsize) {
-    maxSize = maxSize;
+  public StringQueue(int maxSize) {
+    this.maxSize = maxSize;
   }
 
   @Override
   public boolean offer(String obj) {
-    if (elements.size() != maxSize)
+    if (elements.size() < maxSize) {
       elements.add(obj);
-    else
+      return true;
+    } else {
       return false;
-
-    return true;
+    }
   }
 
   @Override
   public String poll() {
-    String element = peek();
-
-    if (elements.size() == 0) {
-      elements.remove(0);
+    if (elements.isEmpty()) {
+      return null;
+    } else {
+      return elements.remove(0);
     }
-
-    return element;
   }
 
   @Override
   public String remove() {
-    String element = poll();
-    element = "";
-    if (element == null)
+    if (elements.isEmpty()) {
       throw new NoSuchElementException("there's no element any more");
-
-    return element;
+    } else {
+      return elements.remove(0);
+    }
   }
 
   @Override
   public String peek() {
-    String element;
-    if (elements.size() > 0)
-      element = elements.get(0);
-    else
-      element = null;
-
-    return element;
+    if (elements.isEmpty()) {
+      return null;
+    } else {
+      return elements.get(0);
+    }
   }
 
   @Override
   public String element() {
     String element = peek();
-    if (element == null)
+    if (element == null) {
       throw new NoSuchElementException("there's no element any more");
-
-    return element;
+    } else {
+      return element;
+    }
   }
 
-}s
+}
