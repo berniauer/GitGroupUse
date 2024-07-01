@@ -25,7 +25,7 @@
 - [x] Entwicklung der Klasse `DrinkQueue` zur Verwaltung von Getränken in einer Queue.
 
 ### Branch `javadoc`
-- [ ] Erstellung von JavaDoc Kommentaren für vorhandene und neue Klassen.
+- [x] Erstellung von JavaDoc Kommentaren für vorhandene und neue Klassen.
 
 ### Branch `tests`
 - [x] Entwicklung von Tests für bestehende und neue Klassen zur Erreichung einer 100% Testabdeckung.
