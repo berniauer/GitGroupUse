@@ -24,14 +24,16 @@ public class DrinkQueueTest {
 
     @Test
     public void testOffer() {
+        // Test adding elements within capacity
         assertTrue(queue.offer(drink1));
         assertEquals(drink1, queue.peek()); // Check if the first drink is the correct one
 
         assertTrue(queue.offer(drink2));
         assertEquals(drink1, queue.peek()); // The first drink should still be the same
 
+        // Test adding element when queue is full
         SimpleDrink drink3 = new SimpleDrink("Wine", water);
-        assertFalse(queue.offer(drink3)); // The queue should be full, so offer should return false
+        assertFalse(queue.offer(drink3)); // The queue should be full, so offer should return false
     }
 
     @Test
