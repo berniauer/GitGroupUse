@@ -24,7 +24,7 @@
 - [x] Implementierung der Klasse `Cocktail`, die das `Drink` Interface implementiert.
 
 ### Branch `queue`
-- [ ] Entwicklung der Klasse `DrinkQueue` zur Verwaltung von Getränken in einer Queue.
+- [x] Entwicklung der Klasse `DrinkQueue` zur Verwaltung von Getränken in einer Queue.
 
 ### Branch `javadoc`
 - [ ] Erstellung von JavaDoc Kommentaren für vorhandene und neue Klassen.
