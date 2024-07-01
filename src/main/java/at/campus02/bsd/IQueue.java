@@ -1,35 +1,45 @@
 package at.campus02.bsd;
 
-// fastly written (not really nice) comments you should adapt
+/**
+ * Interface for a generic queue. This interface defines the basic operations for managing a queue of strings.
+ */
 public interface IQueue {
-  /** 
-   * I am a really bad comment
-   * 
-   * fasdfadsffdsadsf
-   * 
-   * fdsasdfadsf
-   * 
-   *  add object to queue, true if okay 
-   * 
-   * i fell asleep on my keyboard...
-   * 
-   * */ 
+
+  /**
+   * Attempts to add the specified element to this queue.
+   *
+   * @param obj the string element to be added to the queue
+   * @return true if the element was successfully added to the queue, otherwise false
+   * @implSpec Implementations should return false if the queue cannot add any more elements due to capacity restrictions.
+   */
   public abstract boolean offer(String obj);
 
-  //returns + del 1st element; null if nothing in there
-   //
+  /**
+   * Retrieves and removes the head of this queue, or returns null if the queue is empty.
+   *
+   * @return the head of the queue, or null if the queue is empty
+   * @implSpec The element returned is removed from the queue.
+   */
   public abstract String poll();
 
-  /* 
-  same as poll, if there is nothing in there error NoSuchElementException
+  /**
+   * Retrieves and removes the head of this queue. This method differs from {@code poll()} in that it throws an exception if the queue is empty.
+   *
+   * @return the head of the queue
    */
   public abstract String remove();
 
-  // 1st element without dlete, otherwise null
-   
+  /**
+   * Retrieves, but does not remove, the head of this queue, or returns null if the queue is empty.
+   *
+   * @return the head of the queue, or null if the queue is empty
+   */
   public abstract String peek();
 
-  // element is to peek what remove is to poll
-  
+  /**
+   * Retrieves, but does not remove, the head of this queue. This method differs from {@code peek()} in that it throws an exception if the queue is empty.
+   *
+   * @return the head of the queue
+   */
   public abstract String element();
 }
