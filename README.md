@@ -21,7 +21,7 @@
 - [x] Identifikation und Korrektur von drei Fehlern im bestehenden Code.
 
 ### Branch `drink`
-- [ ] Implementierung der Klasse `Cocktail`, die das `Drink` Interface implementiert.
+- [x] Implementierung der Klasse `Cocktail`, die das `Drink` Interface implementiert.
 
 ### Branch `queue`
 - [ ] Entwicklung der Klasse `DrinkQueue` zur Verwaltung von Getränken in einer Queue.
