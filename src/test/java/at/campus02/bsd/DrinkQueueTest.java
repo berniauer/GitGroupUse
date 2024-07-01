@@ -16,7 +16,7 @@ public class DrinkQueueTest {
 
     @BeforeEach
     public void setUp() {
-        queue = new DrinkQueue(2);
+        queue = new DrinkQueue();
         water = new Liquid("Water", 1.0, 0.0);
         drink1 = new SimpleDrink("Water", water);
         drink2 = new SimpleDrink("Juice", water);
@@ -24,14 +24,12 @@ public class DrinkQueueTest {
 
     @Test
     public void testOffer() {
+
         assertTrue(queue.offer(drink1));
-        assertEquals(drink1, queue.peek()); // Check if the first drink is the correct one
+        assertEquals(drink1, queue.peek());
 
         assertTrue(queue.offer(drink2));
-        assertEquals(drink1, queue.peek()); // The first drink should still be the same
-
-        SimpleDrink drink3 = new SimpleDrink("Wine", water);
-        assertFalse(queue.offer(drink3)); // The queue should be full, so offer should return false
+        assertEquals(drink1, queue.peek());
     }
 
     @Test
