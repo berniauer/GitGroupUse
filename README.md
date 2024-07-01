@@ -18,7 +18,7 @@
 - [x] Ein Teammitglied fügt die Adresse des Git Repositories hinzu.
 
 ### Branch `bug_hunt`
-- [ ] Identifikation und Korrektur von drei Fehlern im bestehenden Code.
+- [x] Identifikation und Korrektur von drei Fehlern im bestehenden Code.
 
 ### Branch `drink`
 - [ ] Implementierung der Klasse `Cocktail`, die das `Drink` Interface implementiert.
