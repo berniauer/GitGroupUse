@@ -31,7 +31,7 @@
 - [x] Entwicklung von Tests für bestehende und neue Klassen zur Erreichung einer 100% Testabdeckung.
 
 ### Branch `maven_site`
-- [ ] Erstellung einer maven site Dokumentation mit Integration von Projektinformationen, Teststatistiken und API-Dokumentation.
-- [ ] Jedes Teammitglied fügt eine eigene Markdown-Datei hinzu (`member1.md`, `member2.md`, usw.), die auf der Hauptseite verlinkt wird.
+- [X] Erstellung einer maven site Dokumentation mit Integration von Projektinformationen, Teststatistiken und API-Dokumentation.
+- [X] Jedes Teammitglied fügt eine eigene Markdown-Datei hinzu (`member1.md`, `member2.md`, usw.), die auf der Hauptseite verlinkt wird.
 
 
