@@ -30,4 +30,27 @@ public class DrinkQueue{
             return element;
         }
     }
+    public boolean offer(Drink obj) {
+        if (elements.size() < maxSize) {
+            elements.add(obj);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public Drink poll() {
+        if (elements.isEmpty()) {
+            return null;
+        } else {
+            return elements.remove(0);
+        }
+    }
+    public Drink remove() {
+        if (elements.isEmpty()) {
+            throw new NoSuchElementException("there's no element any more");
+        } else {
+            return elements.remove(0);
+        }
+    }
+
 }
