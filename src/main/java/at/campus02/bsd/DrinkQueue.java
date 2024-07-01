@@ -7,11 +7,11 @@ import java.util.NoSuchElementException;
 public class DrinkQueue{
 
     private List<Drink> elements = new ArrayList<>();
-    private int maxSize;
 
 
-    public DrinkQueue(int maxSize) {
-        this.maxSize = maxSize;
+
+    public DrinkQueue() {
+
     }
 
     public Drink peek() {
@@ -31,12 +31,8 @@ public class DrinkQueue{
         }
     }
     public boolean offer(Drink obj) {
-        if (elements.size() < maxSize) {
             elements.add(obj);
             return true;
-        } else {
-            return false;
-        }
     }
     public Drink poll() {
         if (elements.isEmpty()) {
